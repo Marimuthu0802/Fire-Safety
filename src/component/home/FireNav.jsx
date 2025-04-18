@@ -15,17 +15,18 @@ const Navbar = () => {
       name: 'Our Products',
       dropdown: [
         { name: 'Fire Extinguisher', path: '/fire-extinguisher' },
-        { name: 'Safety Footwear', path: '/safety-footwear' },
-        { name: 'Emergency Lights', path: '/emergency-lights' },
-        { name: 'PPE Kits', path: '/ppe-kits' }
+        { name: 'Fire Hydrants', path: '/fire-hydrants' },
+        { name: 'Fire Alarms', path: '/emergency-lights' },
+        { name: 'Personal Protective Equipments', path: '/protective-equipments'}
       ]
     },
     {
       name: 'Our Services',
       dropdown: [
-        { name: 'AMC Services', path: '/amc-services' },
-        { name: 'Fire Training', path: '/fire-training' },
-        { name: 'Consulting', path: '/consulting' },
+        { name: 'Fire Hydrant Projects', path: '/hydrant-Projects' },
+        { name: 'Fire Alarm Projects', path: '/alarm-Projects' },
+        { name: 'Fire Fighting Training', path: '/fighting-Training' },
+        { name: 'Fire Aid Training', path: '/fireAid-Traing' },
       ]
     },
     { name: 'Contact', path: '/contact' }
@@ -78,19 +79,19 @@ const Navbar = () => {
                   )}
 
                   {/* Dropdown (desktop hover or click) */}
-                  {item.dropdown && isOpenDropdown && (
-                    <ul className="absolute left-0 mt-2 w-52 bg-black text-white shadow-lg rounded-md z-50">
-                      {item.dropdown.map((subItem, subIndex) => (
-                        <li key={subIndex}>
-                          <Link
-                            to={subItem.path}
-                            className="block px-4 py-2 hover:bg-orange-500 hover:text-white"
-                          >
-                            {subItem.name}
-                          </Link>
-                        </li>
-                      ))}
-                    </ul>
+                  {item.dropdown && (
+  <ul className="absolute left-0 mt-2 w-60 bg-black text-white shadow-lg rounded-md z-50 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200">
+    {item.dropdown.map((subItem, subIndex) => (
+      <li key={subIndex}>
+        <Link
+          to={subItem.path}
+          className="block px-5 py-3 hover:bg-orange-500 hover:text-white text-left"
+        >
+          {subItem.name}
+        </Link>
+      </li>
+    ))}
+  </ul>
                   )}
                 </li>
               );
@@ -141,14 +142,14 @@ const Navbar = () => {
 
                       {/* Dropdown (mobile click) */}
                       {((isProduct && openProduct) || (isService && openService)) && (
-                        <ul className="ml-4 mt-2 space-y-1 text-sm text-gray-300">
+                       <ul className="ml-4 mt-2 space-y-2 text-sm text-gray-300">
                           {item.dropdown.map((subItem, subIndex) => (
                             <li key={subIndex}>
-                              <Link
-                                to={subItem.path}
-                                className="block hover:text-orange-400 transition"
-                                onClick={() => setIsOpen(false)}
-                              >
+                             <Link
+                             to={subItem.path}
+                             className="block px-2 py-2 hover:text-orange-400 transition"
+                            onClick={() => setIsOpen(false)}
+                              >  
                                 {subItem.name}
                               </Link>
                             </li>

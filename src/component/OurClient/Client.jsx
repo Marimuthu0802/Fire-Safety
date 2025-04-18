@@ -7,6 +7,7 @@ import ClientImage from './ClientImage'
 import MainFooter from '../home/MainFooter'
 import Clientnav from './Clientnav'
 
+
 const Client = () => {
   return (
     <div>
