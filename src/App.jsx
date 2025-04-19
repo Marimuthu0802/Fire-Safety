@@ -8,6 +8,7 @@ import FireHydrant from './component/OurService/FireHydrant/FireHydrant';
 import FireAlarm from './component/OurService/FireAlram/FireAlarm';
 import FireFightingTraining from './component/OurService/FireFightingTrainings/FireFightingTraining';
 import FirstAid from './component/OurService/FirstAidTraining/FirstAid';
+import FireExtinguisher from './component/OurProduct/FireExtinguisher/FireExtinguisher';
 
 
 
@@ -25,6 +26,7 @@ function App() {
       <Route path='/alarm-Projects'element ={<FireAlarm/>}/>
       <Route path="/fighting-Training" element={<FireFightingTraining/>}/>
       <Route path ="/fireAid-Traing" element={<FirstAid/>}/>
+      <Route path="/fire-extinguisher" element={<FireExtinguisher/>}/>
       </Routes>
       
   

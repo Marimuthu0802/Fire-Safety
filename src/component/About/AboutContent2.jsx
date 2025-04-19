@@ -98,15 +98,16 @@ const AboutContent2 = () => {
 
           {skillData.map((skill, index) => (
             <div key={index}>
-              <h3 className="font-bold text-base md:text-lg">{skill.name}</h3>
-              <div className="w-60 bg-gray-300 h-4 mt-1 rounded-sm hover:'#AboutContent2'">
+              <h3 className="font-bold text-base md:text-lg text-left md:text-center lg:text-left">{skill.name}</h3>
+              <div className="w-full md:w-60 lg:w-60 bg-gray-300 h-4 mt-1 rounded-sm mx-auto lg:mx-0">
                 <div
-                  className="bg-yellow-500 h-4 rounded-md text-xs md:text-sm pl-2 flex items-center transition-all duration-1000 ease-in "
-                  style={{ width: animatedLevels[index] }}
-                >
+                    className="bg-yellow-500 h-4 rounded-md text-xs md:text-sm pl-2 flex items-center transition-all duration-[3000ms] ease-in-out"
+                     style={{ width: animatedLevels[index] }}
+                  >
                   {animatedLevels[index]}
-                </div>
+                </div> 
               </div>
+
             </div>
           ))}
         </div>
