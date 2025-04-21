@@ -4,8 +4,10 @@ import Navbar from '../../home/FireNav'
 import MainFooter from '../../home/MainFooter'
 import SubFooter from '../../home/SubFooter'
 import FireHydrantNav from './FireHydrantNav'
-import Hydrant1 from './hydrant1'
+
 import Hydrant2 from './Hydrant2'
+import Hydra from './Hydra'
+
 
 
 const FireHydrants = () => {
@@ -14,7 +16,7 @@ const FireHydrants = () => {
       <AboveNav/>
       <Navbar/>
       <FireHydrantNav/>
-      <Hydrant1/>
+      <Hydra/>
       <Hydrant2/>
       <MainFooter/>
       <SubFooter/>

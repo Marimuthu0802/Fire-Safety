@@ -3,7 +3,7 @@ import fireExtinguisherBg from '../../../assets/fireExtinguisher.jpg';
 import { AiFillPhone } from "react-icons/ai";
 
 import hydrantsystem from '../../../assets/hydrantsystem.jpeg'
-const Hydrant1 = () => {
+const Hydra = () => {
   return (
    <div className="flex flex-col lg:flex-row w-full justify-center items-center px-4 py-8 gap-6">
          
@@ -50,4 +50,4 @@ const Hydrant1 = () => {
   )
 }
 
-export default Hydrant1
+export default Hydra
