@@ -5,14 +5,16 @@ import MainFooter from '../../home/MainFooter'
 import SubFooter from '../../home/SubFooter'
 import Extinguisher1 from './Extinguisher1'
 import Extinguisher2 from './Extinguisher2'
-import ExtinguisherNav from './extinguisherNav'
+
+import ExtinNav from './ExtinNav'
+
 
 const FireExtinguisher = () => {
   return (
     <div>
      <AboveNav/> 
      <Navbar/>
-     <ExtinguisherNav/>
+     <ExtinNav/>
     <Extinguisher1/>
     <Extinguisher2/>
      <MainFooter/>
