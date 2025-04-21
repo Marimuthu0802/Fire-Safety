@@ -1,4 +1,5 @@
 import React from 'react'
+import alarmwork from '../../../assets/alarmwork.jpeg';
 
 const AlarmWorks = () => {
   return (
@@ -7,7 +8,12 @@ const AlarmWorks = () => {
       FIRE ALARM WORKS
       </h1>
     <div className='flex justify-center items-center '>
-      <img src="src\assets\alarmwork.jpeg" alt="Hydrant"    className=" object-cover rounded-md shadow-lg"/>
+    <img
+  src={alarmwork}
+  alt="Hydrant"
+  className="object-cover rounded-md shadow-lg"
+/>
+
     </div>
     </div>
   )

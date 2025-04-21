@@ -1,5 +1,5 @@
 import React from 'react';
-
+import hydrantProjectImg from '../../../assets/hydrantproject.jpg';
 
 const HydrantProject = () => {
   return (
@@ -9,11 +9,13 @@ const HydrantProject = () => {
       </h1>
 
       <div className="flex flex-col items-center">
-        <img
-          src="src\assets\hydrantproject.jpg"
-          alt="FIRE HYDRANT PROJECTS"
-          className="w-full rounded-lg shadow-lg mb-8"
-        />
+      <img
+        src={hydrantProjectImg}
+        alt="FIRE HYDRANT PROJECTS"
+        loading="lazy"
+        className="w-full rounded-lg shadow-lg mb-8"
+      />
+
 
         <div className="text-base sm:text-md text-justify space-y-6">
           <p>

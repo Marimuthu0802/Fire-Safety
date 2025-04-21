@@ -5,7 +5,8 @@ import MainFooter from '../../home/MainFooter'
 import SubFooter from '../../home/SubFooter'
 import FightingNav from './FightingNav'
 import FightTraining from './FightTraining'
-import FightTrainingWork from './FightTrainingWork'
+import Fighting from './Fighting'
+
 
 const FireFightingTraining = () => {
   return (
@@ -14,7 +15,7 @@ const FireFightingTraining = () => {
       <Navbar/>
       <FightingNav/>
       <FightTraining/>
-     <FightTrainingWork/>
+       <Fighting/>
       <MainFooter/>
       <SubFooter/>
     </div>

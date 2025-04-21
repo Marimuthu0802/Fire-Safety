@@ -9,7 +9,7 @@
 //   ];
 
 //   return (
-//     <div className='flex flex-col lg:flex-row justify-center items-center bg-[url("src/assets/aboutbg.jpg")] bg-center bg-cover bg-no-repeat text-white px-4 py-10 space-x-3'>
+//     <div className='flex flex-col lg:flex-row justify-center items-center bg-[url("../../assets/aboutbg.jpg")] bg-center bg-cover bg-no-repeat text-white px-4 py-10 space-x-3'>
       
     
 //       <div id="skills" className="lg:w-1/2 w-full mb-10 lg:mb-0">
@@ -44,7 +44,7 @@
 
 //       <div className="lg:w-1/2 w-full flex justify-center">
 //         <img
-//           src="src/assets/fireprotectionBG.jpg"
+//           src="../../assets/fireprotectionBG.jpg"
 //           alt="aboutcon2"
 //           className="max-w-full h-auto rounded-md shadow-lg object-cover"
 //         />
@@ -59,6 +59,9 @@
 
 
 import React, { useEffect, useState } from 'react';
+import aboutbg from '../../assets/aboutbg.jpg';
+import fireprotectionBG from '../../assets/fireprotectionBG.jpg';
+
 
 const AboutContent2 = () => {
   const skillData = [
@@ -80,7 +83,11 @@ const AboutContent2 = () => {
   }, []);
 
   return (
-    <div className='flex flex-col lg:flex-row justify-center items-center bg-[url("src/assets/aboutbg.jpg")] bg-center bg-cover bg-no-repeat text-white px-4 py-10 gap-10'>
+    <div
+    className="flex flex-col lg:flex-row justify-center items-center bg-center bg-cover bg-no-repeat text-white px-4 py-10 gap-10"
+    style={{ backgroundImage: `url(${aboutbg})` }}
+  >
+  
       
       {/* Text & Skills */}
       <div id="skills" className="lg:w-1/2 w-full">
@@ -115,11 +122,12 @@ const AboutContent2 = () => {
 
       {/* Image */}
       <div className="lg:w-1/2 w-full flex justify-center">
-        <img
-          src="src/assets/fireprotectionBG.jpg"
-          alt="aboutcon2"
-          className="w-full max-w-md lg:max-w-full h-auto rounded-md shadow-lg object-cover"
-        />
+      <img
+      src={fireprotectionBG}
+      alt="aboutcon2"
+      className="w-full max-w-md lg:max-w-full h-auto rounded-md shadow-lg object-cover"
+      />
+
       </div>
     </div>
   );

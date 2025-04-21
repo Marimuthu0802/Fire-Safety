@@ -1,6 +1,8 @@
 
 import React from 'react'
 import { AiOutlineCheck } from "react-icons/ai"
+import about1 from '../../assets/about1.jpeg';
+import about2 from '../../assets/about2.jpeg';
 
 const AboutContent1 = () => {
   return (
@@ -9,7 +11,8 @@ const AboutContent1 = () => {
 
         {/* WHO WE ARE Section */}
         <div className='flex flex-col lg:flex-row items-center gap-10 justify-center'>
-          <img src="src/assets/about1.jpeg" alt="About1" className="w-full lg:w-[600px] rounded-lg shadow-md" />
+        <img src={about1} alt="About1" className="w-full lg:w-[600px] rounded-lg shadow-md" />
+
 
           <div className="w-full lg:w-1/2 space-y-4 text-center lg:text-left">
             <h1 className='text-3xl lg:text-4xl font-bold'>WHO WE ARE?</h1>
@@ -27,7 +30,7 @@ const AboutContent1 = () => {
 
         {/* PRODUCTS Section */}
         <div className='flex flex-col lg:flex-row items-center gap-10 justify-center'>
-          <img src="src/assets/about2.jpeg" alt="About2" className="w-full lg:w-[600px] rounded-lg shadow-md" />
+          <img src={about2} alt="About2" className="w-full lg:w-[600px] rounded-lg shadow-md" />
 
           <div className="w-full lg:w-1/2 space-y-4 text-center lg:text-left">
             {[

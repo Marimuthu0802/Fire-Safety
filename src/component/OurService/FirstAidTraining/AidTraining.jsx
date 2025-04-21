@@ -1,4 +1,5 @@
 import React from 'react'
+import firstAidImg from '../../../assets/firstaid.jpeg';
 
 const AidTraining = () => {
   return (
@@ -8,11 +9,11 @@ const AidTraining = () => {
       </h1>
 
       <div className="flex flex-col items-center">
-        <img
-          src="src\assets\firstaid.jpeg"
-          alt="FIRE HYDRANT PROJECTS"
-          className="w-full rounded-lg shadow-lg mb-8"
-        />
+      <img
+        src={firstAidImg}
+        alt="FIRE HYDRANT PROJECTS"
+        className="w-full rounded-lg shadow-lg mb-8"
+      />
 
         <div className="text-base sm:text-md text-justify space-y-6">
           <p>

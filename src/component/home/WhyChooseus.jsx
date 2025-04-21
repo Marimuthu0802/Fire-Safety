@@ -1,23 +1,29 @@
 import React from "react";
+import why1 from '../../assets/why1.png';
+import why2 from '../../assets/why2.png';
+import why3 from '../../assets/why3.png';
+import why4 from '../../assets/why4.png';
+
 
 const services = [
   {
     title: "Quick & Easy",
-    img: "./src/assets/why1.png",
+    img: why1,
   },
   {
     title: "Efficient & Accurate",
-    img: "./src/assets/why2.png",
+    img: why2,
   },
   {
     title: "No-Obligation",
-    img: "./src/assets/why3.png",
+    img: why3,
   },
   {
     title: "Fast & Accurate",
-    img: "./src/assets/why4.png",
+    img: why4,
   },
 ];
+
 
 const WhyChooseus = () => {
   return (

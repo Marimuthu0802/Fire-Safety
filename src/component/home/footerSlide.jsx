@@ -3,18 +3,26 @@ import React from "react";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+import slide1 from '../../assets/slide1.png';
+import slide2 from '../../assets/slide2.png';
+import slide3 from '../../assets/slide3.png';
+import slide4 from '../../assets/slide4.png';
+import slide5 from '../../assets/slide5.png';
+import slide6 from '../../assets/slide6.png';
+import slide7 from '../../assets/slide7.png';
+import slide8 from '../../assets/slide8.png';
 
 const brands = [
-  { src:"./src/assets/slide1.png", alt: "slide1" },
-  { src:"./src/assets/slide2.png", alt: "slide2" },
-  { src:"./src/assets/slide3.png", alt: "slide3" },
-  { src:"./src/assets/slide4.png", alt: "slide4" },
-  { src:"./src/assets/slide5.png", alt: "slide5" },
-  { src:"./src/assets/slide6.png", alt: "slide6" },
-  { src:"./src/assets/slide7.png", alt: "slide7" },
-  { src:"./src/assets/slide8.png", alt: "slide8" },
-  
+  { src: slide1, alt: "slide1" },
+  { src: slide2, alt: "slide2" },
+  { src: slide3, alt: "slide3" },
+  { src: slide4, alt: "slide4" },
+  { src: slide5, alt: "slide5" },
+  { src: slide6, alt: "slide6" },
+  { src: slide7, alt: "slide7" },
+  { src: slide8, alt: "slide8" },
 ];
+
 
 const BrandCarousel = () => {
   const settings = {

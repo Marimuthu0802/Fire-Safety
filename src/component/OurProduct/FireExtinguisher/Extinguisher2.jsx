@@ -1,5 +1,6 @@
 import React from 'react'
 import { FaHardHat, FaTools } from 'react-icons/fa';
+import CountUp from 'react-countup';
 
 const Extinguisher2 = () => {
   return (
@@ -34,24 +35,38 @@ const Extinguisher2 = () => {
 
       {/* Right: Info Boxes */}
       <div className="lg:w-1/3 flex flex-col gap-10 items-center">
-        {/* Card 1 */}
-        <div className="bg-black text-white w-[250px] h-[250px] flex flex-col justify-center items-center rounded-md shadow-md">
-          <FaHardHat size={40} className="text-yellow-400 mb-3" />
-          <h2 className="text-3xl font-semibold">600+</h2>
-          <p className="text-base">Satisfied clients</p>
-        </div>
-
-        {/* Card 2 */}
-        <div className="bg-black text-white w-[250px] h-[250px] flex flex-col justify-center items-center rounded-md shadow-md">
-          <FaTools size={40} className="text-yellow-400 mb-3" />
-          <h2 className="text-3xl font-semibold">1500+</h2>
-          <p className="text-base">Satisfied clients</p>
-        </div>
+      {/* Card 1 */}
+      <div className="bg-black text-white w-[250px] h-[250px] flex flex-col justify-center items-center rounded-md shadow-md">
+        <FaHardHat size={40} className="text-yellow-400 mb-3" />
+        <h2 className="text-3xl font-semibold">
+          <CountUp
+            end={600}
+            duration={2}
+            enableScrollSpy
+            scrollSpyDelay={300}
+          />+
+        </h2>
+        <p className="text-base">Satisfied clients</p>
       </div>
+
+      {/* Card 2 */}
+      <div className="bg-black text-white w-[250px] h-[250px] flex flex-col justify-center items-center rounded-md shadow-md">
+        <FaTools size={40} className="text-yellow-400 mb-3" />
+        <h2 className="text-3xl font-semibold">
+          <CountUp
+            end={1500}
+            duration={2.5}
+            enableScrollSpy
+            scrollSpyDelay={300}
+          />+
+        </h2>
+        <p className="text-base">Satisfied clients</p>
+      </div>
+    </div>
 
     </div>
   </div>
   )
 }
 
-export default Extinguisher2
+export default Extinguisher2 

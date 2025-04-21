@@ -1,10 +1,14 @@
 import React from 'react';
+import fireprotectionBG from '../../assets/fireprotectionBG.jpg';
 
 const BgFire = () => {
   return (
     <div className="relative h-[400px] w-full flex items-center justify-center text-white">
       {/* Background Image */}
-      <div className="absolute inset-0 bg-[url('./src/assets/fireprotectionBG.jpg')] bg-cover bg-center bg-no-repeat" />
+      <div
+        className="absolute inset-0 bg-cover bg-center bg-no-repeat"
+        style={{ backgroundImage: `url(${fireprotectionBG})` }}
+      />
 
       {/* Dark Overlay */}
       <div className="absolute inset-0 bg-black opacity-80" />

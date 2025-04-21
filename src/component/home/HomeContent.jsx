@@ -1,11 +1,13 @@
 import React from 'react';
-
+import homecon1 from '../../assets/homecon1.jpg'
+import firesafety1 from "../../assets/firesafety1.png"
+import firesafety2 from "../../assets/firesafety2.png"
 const HomeContent = () => {
   return (
     <div className="flex flex-col lg:flex-row items-center justify-center gap-8 px-4 py-8">
 
       <div className="flex justify-center">
-        <img src="./src/assets/homecon1.jpg" alt="HomeContent image" className="w-full max-w-xl object-cover" />
+        <img src={homecon1} alt="HomeContent image" className="w-full max-w-xl object-cover" />
       </div>
 
      
@@ -23,11 +25,11 @@ const HomeContent = () => {
      
         <div className="flex space-x-6">
           <div className="text-center">
-            <img src="./src/assets/firesafety1.png" alt="firesafety1" className="w-20 mx-auto" />
+            <img src={firesafety1} alt="firesafety1" className="w-20 mx-auto" />
             <h4 className="mt-2 font-medium text-sm">Fire Safety<br /> Products</h4>
           </div>
           <div className="text-center">
-            <img src="./src/assets/firesafety2.png" alt="firesafety2" className="w-20 mx-auto" />
+            <img src={firesafety2} alt="firesafety2" className="w-20 mx-auto" />
             <h4 className="mt-2 font-medium text-sm">Fire Safety<br /> Services</h4>
           </div>
         </div>

@@ -1,4 +1,6 @@
 import React from 'react'
+import AlarmSafe from '../../../assets/AlarmSafe.jpeg';
+
 
 const AlarmProject = () => {
   return (
@@ -8,11 +10,12 @@ const AlarmProject = () => {
     </h1>
 
     <div className="flex flex-col items-center">
-      <img
-        src="src\assets\AlarmSafe.jpeg"
-        alt="FIRE Alarm PROJECTS"
-        className="w-full rounded-lg shadow-lg mb-8"
-      />
+    <img
+    src={AlarmSafe}
+    alt="FIRE Alarm PROJECTS"
+    className="w-full rounded-lg shadow-lg mb-8"
+  />
+
 
       <div className="text-base sm:text-md text-justify space-y-6">
         <p>

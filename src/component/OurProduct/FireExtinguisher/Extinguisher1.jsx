@@ -1,5 +1,7 @@
 import React from 'react';
 import { AiFillPhone } from "react-icons/ai";
+import fireExtinguisher from '../../../assets/fireExtinguisher.jpg';
+import fireExtinguisherBg from '../../../assets/fireExtinguisher2.jpg';
 
 const Extinguisher1 = () => {
   return (
@@ -8,16 +10,19 @@ const Extinguisher1 = () => {
       {/* Left Image */}
       <div className="w-full lg:w-1/2 flex justify-center">
         <img
-          src="src/assets/fireExtinguisher.jpg"
+          src={fireExtinguisher}
           alt="Fire Extinguisher"
           className="w-full max-w-md md:max-w-lg lg:max-w-2xl h-auto object-cover rounded-md shadow-lg"
         />
       </div>
 
       {/* Right Section with Background Image */}
-      <div className="w-full lg:w-1/2 max-w-md md:max-w-lg min-h-[300px] md:min-h-[400px] lg:min-h-[450px] bg-[url('src/assets/fireExtinguisher2.jpg')] bg-center bg-cover relative rounded-md shadow-lg">
+      <div
+        className="w-full lg:w-1/2 max-w-md md:max-w-lg min-h-[300px] md:min-h-[400px] lg:min-h-[450px] bg-center bg-cover relative rounded-md shadow-lg"
+        style={{ backgroundImage: `url(${fireExtinguisherBg})` }}
+      >
         {/* Overlay */}
-        <div className="absolute inset-0 bg-black opacity-75 rounded-md"></div>
+        <div className="absolute inset-0 bg-black bg-opacity-75 rounded-md"></div>
 
         {/* Content */}
         <div className="relative z-10 text-center text-white space-y-4 px-4 py-6 md:py-10">
@@ -46,4 +51,3 @@ const Extinguisher1 = () => {
 };
 
 export default Extinguisher1;
-
