@@ -1,5 +1,5 @@
 import React from 'react'
-
+import footerBG from '../../../assets/footer.png';
 const ExtinNav = () => {
   return (
     <div className="grid grid-cols-1 justify-center items-center text-center text-white pt-10 pb-10 bg-cover bg-center bg-no-repeat"  style={{ backgroundImage: `url(${footerBG})` }}

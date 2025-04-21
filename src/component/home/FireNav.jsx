@@ -17,8 +17,8 @@ const Navbar = () => {
       dropdown: [
         { name: 'Fire Extinguisher', path: '/fire-extinguisher' },
         { name: 'Fire Hydrants', path: '/fire-hydrants' },
-        { name: 'Fire Alarms', path: '/emergency-lights' },
-        { name: 'Personal Protective Equipments', path: '/protective-equipments'}
+        // { name: 'Fire Alarms', path: '/firealaram' },
+        // { name: 'Personal Protective Equipments', path: '/personal'}
       ]
     },
     {

@@ -7,7 +7,7 @@ import HydrantNav from './HydrantNav'
 import HydrantProject from './HydrantProject'
 
 import ProjectImage from './ProjectImage'
-const FireHydrant = () => {
+const FireHydrant1 = () => {
   return (
     <div>
        <AboveNav/>
@@ -21,4 +21,4 @@ const FireHydrant = () => {
   )
 }
 
-export default FireHydrant
+export default FireHydrant1
