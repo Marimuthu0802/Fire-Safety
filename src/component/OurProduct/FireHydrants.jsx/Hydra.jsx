@@ -1,5 +1,6 @@
 import React from 'react'
 import fireExtinguisherBg from '../../../assets/fireExtinguisher.jpg';
+import hydrantsystem from '../../../assets/hydrantsystem.jpeg'
 import { AiFillPhone } from "react-icons/ai";
 
 const Hydra = () => {
